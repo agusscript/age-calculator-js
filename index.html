@@ -12,20 +12,34 @@
 <body>
 
   <main>
-    Day
-    DD
+    <section class="calculator">
+      <form>
+        <label class="label-day">
+          Day
+          <input type="text" maxlength="2" class="input-day" placeholder="DD">
+        </label>
+        <label class="label-month">
+          Month
+          <input type="text" maxlength="2" class="input-month" placeholder="MM">
+        </label>
+        <label class="label-year">
+          Year
+          <input type="text" maxlength="4" class="input-year" placeholder="YYYY">
+        </label>
 
-    Month
-    MM
+        <button class="btn-calculate">
+          <img src="assets/images/icon-arrow.svg" alt="icon arrow">
+        </button>
+      </form>
 
-    Year
-    YYYY
-
-    -- years
-    -- months
-    -- days
+      <div class="result-container">
+        <p><span class="text-year">- -</span> years</p>
+        <p><span class="text-month">- -</span> months</p>
+        <p><span class="text-day">- -</span> days</p>
+      </div>
+    </section>
   </main>
-
+  <script src="main.js"></script>
 </body>
 
 </html>

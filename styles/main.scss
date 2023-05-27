@@ -11,4 +11,96 @@ $Off-black: hsl(0, 0%, 8%);
 body {
   margin: 0;
   padding: 0;
+  background-color: $Off-white;
+  font-family: "Poppins", serif;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator {
+  box-sizing: border-box;
+  padding: 3rem;
+  width: 700px;
+  height: auto;
+  background-color: $White;
+  border-radius: 1.6rem;
+  border-bottom-right-radius: 10rem;
+
+  form {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    border-bottom: 2px solid $Off-white;
+    padding-bottom: 2.5rem;
+    position: relative;
+
+    label {
+      display: flex;
+      flex-direction: column;
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+      font-size: 0.97rem;
+
+      input {
+        margin: 0.4rem 0;
+        width: 120px;
+        height: 60px;
+        padding-left: 1rem;
+        outline: none;
+        border-radius: 0.3rem;
+        border: 1px solid $Light-grey;
+        font-size: 1.8rem;
+        font-family: inherit;
+        font-weight: 700;
+      }
+
+      input::placeholder {
+        font-size: inherit;
+      }
+
+      input:focus {
+        border: 1px solid $Purple;
+      }
+    }
+
+    button {
+      position: absolute;
+      border: none;
+      right: 0%;
+      top: 70%;
+      padding: 1rem;
+      background-color: $Purple;
+      border-radius: 50%;
+      transition: all 0.3s;
+    }
+
+    button:hover {
+      cursor: pointer;
+      background-color: $Off-black;
+    }
+  }
+
+  .result-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem 0 0 0;
+
+    p {
+      margin: 0;
+      line-height: 5rem;
+      font-size: 4.5rem;
+      font-style: italic;
+      font-weight: 700;
+
+      span {
+        color: $Purple;
+      }
+    }
+  }
 }
