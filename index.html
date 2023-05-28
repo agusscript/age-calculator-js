@@ -14,22 +14,27 @@
   <main>
     <section class="calculator">
       <form>
-        <label class="label-day">
-          Day
-          <input type="text" maxlength="2" class="input-day" placeholder="DD">
-        </label>
-        <label class="label-month">
-          Month
-          <input type="text" maxlength="2" class="input-month" placeholder="MM">
-        </label>
-        <label class="label-year">
-          Year
-          <input type="text" maxlength="4" class="input-year" placeholder="YYYY">
-        </label>
+        <div class="input-container">
+          <label class="label-day">
+            Day
+            <input type="text" maxlength="2" class="input-day" placeholder="DD">
+          </label>
+          <label class="label-month">
+            Month
+            <input type="text" maxlength="2" class="input-month" placeholder="MM">
+          </label>
+          <label class="label-year">
+            Year
+            <input type="text" maxlength="4" class="input-year" placeholder="YYYY">
+          </label>
+        </div>
 
-        <button class="btn-calculate">
-          <img src="assets/images/icon-arrow.svg" alt="icon arrow">
-        </button>
+        <div class="btn-container">
+          <hr>
+          <button class="btn-calculate">
+            <img src="assets/images/icon-arrow.svg" alt="icon arrow">
+          </button>
+        </div>
       </form>
 
       <div class="result-container">
