@@ -35,14 +35,17 @@ function validateDay(DD) {
   if (DD.length === 0) {
     $textErrorDay.textContent = "This field is required";
     $labelDay.classList.add("error");
+    $inputDay.classList.add("error");
     return errorDay++;
   } else if (!/^(0?[1-9]|[12][0-9]|3[01])$/.test(DD)) {
     $textErrorDay.textContent = "Invalid Day format";
     $labelDay.classList.add("error");
+    $inputDay.classList.add("error");
     return errorDay++;
   } else {
     $textErrorDay.textContent = ""
     $labelDay.classList.remove("error");
+    $inputDay.classList.remove("error");
     return errorDay = 0;
   }
 }
@@ -54,14 +57,17 @@ function validateMonth(MM) {
   if (MM.length === 0) {
     $textErrorMonth.textContent = "This field is required";
     $labelMonth.classList.add("error");
+    $inputMonth.classList.add("error");
     return errorMonth++;
   } else if (!/^0[0-9]|1[0-2]$/.test(MM)) {
     $textErrorMonth.textContent = "Invalid month format";
     $labelMonth.classList.add("error");
+    $inputMonth.classList.add("error");
     return errorMonth++;
   } else {
     $textErrorMonth.textContent = "";
     $labelMonth.classList.remove("error");
+    $inputMonth.classList.remove("error");
     return errorMonth = 0;
   }
 }
@@ -73,14 +79,17 @@ function validateYear(YYYY) {
   if (YYYY.length === 0) {
     $textErrorYear.textContent = "This field is required";
     $labelYear.classList.add("error");
+    $inputYear.classList.add("error");
     return errorYear++;
   } else if (YYYY.length != 4 || YYYY > currentYear) {
     $textErrorYear.textContent = "Invalid year format";
     $labelYear.classList.add("error");
+    $inputYear.classList.add("error");
     return errorYear++;
   } else {
     $textErrorYear.textContent = "";
     $labelYear.classList.remove("error");
+    $inputYear.classList.remove("error");
     return errorYear = 0;
   }
 }
