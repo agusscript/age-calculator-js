@@ -27,11 +27,11 @@ Users should be able to:
 
 - Desktop view
 
-![](images/screenshots/desktop-error-empty.jpg)
+![](assets/screenshots/desktop-error-empty.jpg)
 
 - Mobile view
 
-![](images/screenshots/mobile-design.jpg)
+![](assets/screenshots/mobile-design.jpg)
 
 ### Links
 
