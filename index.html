@@ -13,19 +13,22 @@
 
   <main>
     <section class="calculator">
-      <form>
+      <form class="age-form">
         <div class="input-container">
           <label class="label-day">
             Day
-            <input type="text" maxlength="2" class="input-day" placeholder="DD">
+            <input type="text" maxlength="2" id="DD" name="DD" class="input-day" placeholder="DD">
+            <span class="day-error-text"></span>
           </label>
           <label class="label-month">
             Month
-            <input type="text" maxlength="2" class="input-month" placeholder="MM">
+            <input type="text" maxlength="2" id="MM" name="MM" class="input-month" placeholder="MM">
+            <span class="month-error-text"></span>
           </label>
           <label class="label-year">
             Year
-            <input type="text" maxlength="4" class="input-year" placeholder="YYYY">
+            <input type="text" maxlength="4" id="YYYY" name="YYYY" class="input-year" placeholder="YYYY">
+            <span class="year-error-text"></span>
           </label>
         </div>
 

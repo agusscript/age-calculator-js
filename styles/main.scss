@@ -83,6 +83,22 @@ main {
           }
         }
 
+        input:focus {
+          background-color: rgb(232, 240, 254);
+        }
+
+        span {
+          text-transform: initial;
+          font-family: Arial, Helvetica, sans-serif;
+          color: $Light-red;
+          font-size: 0.9rem;
+          letter-spacing: 0;
+        }
+
+        .error {
+          border: 1px solid $Light-red;
+        }
+
         input::placeholder {
           font-size: inherit;
         }
