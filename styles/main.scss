@@ -176,3 +176,24 @@ main {
     }
   }
 }
+
+footer {
+  position: absolute;
+  bottom: 0;
+
+  @media (max-height: 480px) {
+    display: none;
+  }
+
+  p {
+    margin: 0.7rem;
+
+    a {
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}
