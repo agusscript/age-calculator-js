@@ -14,7 +14,7 @@ let errorYear = 0;
 function showUserAge() {
   let userYears = currentYear - $inputYear.value;
   let userMonths = currentMonth - $inputMonth.value;
-  const userDays = currentDay - $inputDay.value;
+  const userDays = 31 - $inputDay.value;
 
   if ($inputMonth.value > currentMonth) {
     userYears -= 1;
