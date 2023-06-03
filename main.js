@@ -3,23 +3,30 @@ const $inputDay = document.querySelector(".input-day");
 const $inputMonth = document.querySelector(".input-month");
 const $inputYear = document.querySelector(".input-year");
 const $buttonCalculate = document.querySelector(".btn-calculate");
-const currentDate = new Date().toJSON().slice(0, 10);
-const currentYear = parseInt(currentDate.slice(0, 4));
-const currentMonth = parseInt(currentDate.slice(5, 7));
-const currentDay = parseInt(currentDate.slice(8, 10));
+const date = new Date();
+let currentYear = date.getFullYear();
+let currentMonth = date.getMonth() + 1;
+let currentDay = date.getDate();
 let errorDay = 0;
 let errorMonth = 0;
 let errorYear = 0;
 
+const months = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+
 function showUserAge() {
-  let userYears = currentYear - $inputYear.value;
-  let userMonths = currentMonth - $inputMonth.value;
-  const userDays = 31 - $inputDay.value;
+  if ($inputDay.value > currentDay) {
+    currentDay = currentDay + months[currentMonth - 1];
+    currentMonth = currentMonth - 1;
+  }
 
   if ($inputMonth.value > currentMonth) {
-    userYears -= 1;
-    userMonths += 12;
+    currentMonth = currentMonth + 12;
+    currentYear = currentYear - 1;
   }
+
+  let userYears = currentYear - $inputYear.value;
+  let userMonths = currentMonth - $inputMonth.value;
+  const userDays = currentDay - $inputDay.value;
 
   document.querySelector(".text-year").textContent = userYears;
   document.querySelector(".text-month").textContent = userMonths;
@@ -43,10 +50,10 @@ function validateDay(DD) {
     $inputDay.classList.add("error");
     return errorDay++;
   } else {
-    $textErrorDay.textContent = ""
+    $textErrorDay.textContent = "";
     $labelDay.classList.remove("error");
     $inputDay.classList.remove("error");
-    return errorDay = 0;
+    return (errorDay = 0);
   }
 }
 
@@ -68,7 +75,7 @@ function validateMonth(MM) {
     $textErrorMonth.textContent = "";
     $labelMonth.classList.remove("error");
     $inputMonth.classList.remove("error");
-    return errorMonth = 0;
+    return (errorMonth = 0);
   }
 }
 
@@ -90,7 +97,7 @@ function validateYear(YYYY) {
     $textErrorYear.textContent = "";
     $labelYear.classList.remove("error");
     $inputYear.classList.remove("error");
-    return errorYear = 0;
+    return (errorYear = 0);
   }
 }
 
