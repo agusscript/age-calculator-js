@@ -1,58 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="styles/main.scss" />
+  </head>
+  <body>
+    <main>
+      <section class="calculator">
+        <form class="age-form">
+          <div class="input-container">
+            <label class="label-day">
+              Day
+              <input
+                type="text"
+                maxlength="2"
+                id="DD"
+                name="DD"
+                class="input-day"
+                placeholder="DD"
+              />
+              <span class="day-error-text"></span>
+            </label>
+            <label class="label-month">
+              Month
+              <input
+                type="text"
+                maxlength="2"
+                id="MM"
+                name="MM"
+                class="input-month"
+                placeholder="MM"
+              />
+              <span class="month-error-text"></span>
+            </label>
+            <label class="label-year">
+              Year
+              <input
+                type="text"
+                maxlength="4"
+                id="YYYY"
+                name="YYYY"
+                class="input-year"
+                placeholder="YYYY"
+              />
+              <span class="year-error-text"></span>
+            </label>
+          </div>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <title>Age calculator app</title>
-  <link rel="stylesheet" href="styles/main.css">
-</head>
+          <div class="btn-container">
+            <hr />
+            <button class="btn-calculate">
+              <img src="assets/images/icon-arrow.svg" alt="icon arrow" />
+            </button>
+          </div>
+        </form>
 
-<body>
-
-  <main>
-    <section class="calculator">
-      <form class="age-form">
-        <div class="input-container">
-          <label class="label-day">
-            Day
-            <input type="text" maxlength="2" id="DD" name="DD" class="input-day" placeholder="DD">
-            <span class="day-error-text"></span>
-          </label>
-          <label class="label-month">
-            Month
-            <input type="text" maxlength="2" id="MM" name="MM" class="input-month" placeholder="MM">
-            <span class="month-error-text"></span>
-          </label>
-          <label class="label-year">
-            Year
-            <input type="text" maxlength="4" id="YYYY" name="YYYY" class="input-year" placeholder="YYYY">
-            <span class="year-error-text"></span>
-          </label>
+        <div class="result-container">
+          <p><span class="text-year">- -</span> years</p>
+          <p><span class="text-month">- -</span> months</p>
+          <p><span class="text-day">- -</span> days</p>
         </div>
-
-        <div class="btn-container">
-          <hr>
-          <button class="btn-calculate">
-            <img src="assets/images/icon-arrow.svg" alt="icon arrow">
-          </button>
-        </div>
-      </form>
-
-      <div class="result-container">
-        <p><span class="text-year">- -</span> years</p>
-        <p><span class="text-month">- -</span> months</p>
-        <p><span class="text-day">- -</span> days</p>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <p>
-      Coded by <a href="https://github.com/agusscript" target="_blank">Agustin Sanchez</a>
-    </p>
-  </footer>
-  <script src="main.js"></script>
-</body>
-
+      </section>
+    </main>
+    <footer>
+      <p>
+        Coded by
+        <a href="https://github.com/agusscript" target="_blank"
+          >Agustin Sanchez</a
+        >
+      </p>
+    </footer>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
 </html>
