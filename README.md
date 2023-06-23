@@ -2,7 +2,8 @@
 
 ![](assets/screenshots/desktop-preview.jpg)
 
-This is a solution to the [Age calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Age calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+
 ## Table of contents
 
 - [Overview](#overview)
@@ -12,7 +13,6 @@ This is a solution to the [Age calculator app challenge on Frontend Mentor](http
 - [My process](#my-process)
   - [Built with](#built-with)
 - [Author](#author)
-
 
 ## Overview
 
@@ -55,6 +55,12 @@ Users should be able to:
  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
   <img src="https://img.shields.io/badge/-JavaScript-yellow?style=flat-square&logo=Javascript&logoColor=white" height="30" alt="JavaScript"/>
  </a>
+ <a href="https://www.typescriptlang.org/">
+  <img src="https://img.shields.io/badge/-TypeScript-007acc?style=flat-square&logo=TypeScript&logoColor=white" height="30" alt="TypeScript"/>
+ </a>
+ <a href="https://vitejs.dev/">
+  <img src="https://img.shields.io/badge/-ViteJS-purple?style=flat-square&logo=Vite&logoColor=white" height="30" alt="ViteJs"/>
+ </a>
 </p>
 
 - Semantic HTML5 markup
@@ -63,10 +69,10 @@ Users should be able to:
 - Sass
 - Media queries and responsive design
 - JavaScript functions and DOM events
+- TypesScript
 
 ## Author
 
 - Linkedin - [Agustin Emanuel Sanchez](https://www.linkedin.com/in/agustin-emanuel-sanchez-4b2807240/)
 - Frontend Mentor - [@agusscript](https://www.frontendmentor.io/profile/agusscript)
-- CodePen - [Agustin Sanchez](https://codepen.io/agusscript)
 - Twitter - [@agus_script](https://twitter.com/agus_script)
